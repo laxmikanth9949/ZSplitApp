@@ -1,0 +1,48 @@
+<mvc:View controllerName="ZUpload.ZUpload.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout.form" class="sapUiSizeCompact">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="CSV File Upload">
+					<content>
+						<l:SimpleForm title="File Upload" editable="true">
+							<l:content>
+								<Label text="File Name"/>
+								<VBox>
+									<u:FileUploader id="idfileUploader" width="50%" sameFilenameAllowed="false" placeholder="Choose a CSV file" style="Emphasized"></u:FileUploader>
+									<Button text="Upload" press="onUpload"></Button>
+								</VBox>
+							</l:content>
+						</l:SimpleForm>
+						<Table id="idTable" items="{/}">
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text text="{prodno}"></Text>
+										<Text text="{product}"></Text>
+										<Text text="{productname}"></Text>
+										<Text text="{uom}"></Text>
+									</cells>
+								</ColumnListItem>
+							</items>
+							<columns>
+								<Column>
+									<Text text="Product No"></Text>
+								</Column>
+								<Column>
+									<Text text="Product"></Text>
+								</Column>
+								<Column>
+									<Text text="Product Name"></Text>
+								</Column>
+								<Column>
+									<Text text="Unit of Measure"></Text>
+								</Column>
+							</columns>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
