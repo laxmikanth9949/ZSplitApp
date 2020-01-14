@@ -23,8 +23,8 @@
 										<Text text="{productname}"></Text>
 										<Text text="{uom}"></Text>
 										<HBox>
-										<Button text="" icon="sap-icon://edit" press="onEdit" />
-										<Button text="" icon="sap-icon://home" press="onPressHome" />
+										<Button icon="sap-icon://edit" press="onEdit" />
+										<Button icon="sap-icon://home" press="onPressHome" />
 										</HBox>
 									</cells>
 								</ColumnListItem>
